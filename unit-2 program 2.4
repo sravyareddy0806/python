@@ -1,0 +1,11 @@
+   # Program to demonstrate error handling using try-except 
+ 
+# Input numbers from user 
+numerator = int(input("Enter numerator: ")) 
+denominator = int(input("Enter denominator: ")) 
+ 
+try: 
+    result = numerator / denominator 
+    print("Result:", result) 
+except ZeroDivisionError: 
+    print("Error: Division by zero is not allowed!")
