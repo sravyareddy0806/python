@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    N = int(input())
+    my_list = []
+    
+    for _ in range(N):
+        # Split the input into a list of strings (command + arguments)
+        command_input = input().split()
+        cmd = command_input[0]
+        args = command_input[1:]
+        
+        if cmd == "insert":
+            # args[0] is index i, args[1] is element e
+            my_list.insert(int(args[0]), int(args[1]))
+        elif cmd == "print":
+            print(my_list)
+        elif cmd == "remove":
+            my_list.remove(int(args[0]))
+        elif cmd == "append":
+            my_list.append(int(args[0]))
+        elif cmd == "sort":
+            my_list.sort()
+        elif cmd == "pop":
+            my_list.pop()
+        elif cmd == "reverse":
+            my_list.reverse()
